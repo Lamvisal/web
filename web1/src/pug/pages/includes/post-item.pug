@@ -1,0 +1,7 @@
+// Nested row for non-featured blog posts
+.row
+  - for (var x = 0; x < 6; x++)
+    .col-lg-6
+      // Blog post
+      +article("Featured Post Title","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.","Xem thêm","abc.html")
+        img.card-img-top(src="https://source.unsplash.com/user/erondu/300x300", height="300", alt="img", srcset="https://source.unsplash.com/user/erondu/300x300")

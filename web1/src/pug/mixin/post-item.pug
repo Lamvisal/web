@@ -1,0 +1,8 @@
+mixin article(title,text,linktext, linkhref)
+  .card.article.mb-4
+    if block
+        block    
+    .card-body
+      h5.card-title= title
+      p.card-text= text 
+      a(href=linkhref).btn.btn-primary.stretched-link= linktext
