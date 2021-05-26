@@ -39,6 +39,7 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin.git"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "bootstrap": "5.0.1"
     },
     "devDependencies": {

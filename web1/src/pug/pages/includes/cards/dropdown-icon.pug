@@ -1,0 +1,29 @@
+div.card.shadow.mb-4
+    //Card Header - Dropdown 
+    div.card-header.py-3.d-flex.flex-row.align-items-center.justify-content-between
+
+        h6.m-0.font-weight-bold.text-primary Dropdown Card Example
+
+        div.dropdown.no-arrow
+
+            a#dropdownMenuLink.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+
+                i.fas.fa-ellipsis-v.fa-sm.fa-fw.text-gray-400
+
+            div.dropdown-menu.dropdown-menu-right.shadow.animate__animated.fadeInUp(aria-labelledby="dropdownMenuLink")
+
+                div.dropdown-header Dropdown Header
+
+                a.dropdown-item(href="#") Action
+
+                a.dropdown-item(href="#") Another action
+
+                .dropdown-divider
+
+                a.dropdown-item(href="#") Something else here
+
+    //Card Body
+    .card-body
+        | Dropdown menus can be placed in the card header in order to extend the functionality
+        | of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis
+        | icon in the card header can be clicked on in order to toggle a dropdown menu.
