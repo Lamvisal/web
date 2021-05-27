@@ -1,4 +1,4 @@
-extends ../layouts/right-content.pug
+extends ../layouts/no-container.pug
 
 block config
     - var bodyClass = 'sb-nav-fixed'
@@ -12,12 +12,25 @@ block config
 
 block content
     //- include includes/breadcrumb.pug       
-    include includes/cards/dropdown-icon.pug    
-    .row.gx-2.gx-lg-3.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
-        -for(var x=0;x<20;x++)
-            .col-lg-4.mb-3   
-                include includes/products/product-item.pug       
+    //- include includes/cards/dropdown-icon.pug    
+    section.py-5
+        .container
+            .row.gx-2.gx-lg-3.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
+                -for(var x=0;x<20;x++)
+                    .col-lg-4.mb-3   
+                        include includes/products/product-item.pug       
 
+    // Pricing section
+    section.bg-light.py-5
+        .container.px-5.my-5
+            .text-center.mb-5
+                h1.fw-bolder Pay as you grow
+                p.lead.fw-normal.text-muted.mb-0 With our no hassle pricing plans
+            .row.gx-5.justify-content-center
+                -for(var x=0;x<3;x++)
+                    // Pricing card free
+                    .col-lg-6.col-xl-4
+                        include includes/cards/pricing.pug
 
 append scripts
     //- Demo
