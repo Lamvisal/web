@@ -12,7 +12,10 @@ block config
 
 block content
     //- include includes/breadcrumb.pug       
-    include includes/product-item.pug       
+    .row.gx-2.gx-lg-3.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
+        -for(var x=0;x<4;x++)
+            .col-lg-4
+                include includes/products/product-item.pug     
     
 
 append scripts
