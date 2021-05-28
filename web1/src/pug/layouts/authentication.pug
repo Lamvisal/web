@@ -12,17 +12,13 @@ html(lang='en')
         include includes/head/css.pug
         include includes/head/icons.pug
 
-    body.bg-primary
+    body.bg-primary                   
 
-        #layoutAuthentication
-            
-            #layoutAuthentication_content
+        .h-100.d-flex.flex-column
+                
+            block content
 
-                main
-                    
-                    block content
-
-            #layoutAuthentication_footer
+            .mt-auto
                     
                 include includes/footer.pug
 

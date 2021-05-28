@@ -9,7 +9,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
                 li.nav-item
                     a.nav-link.active(aria-current='page' href='/') Home
                 li.nav-item
-                    a.nav-link(href='category.html') Category
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                        | News
+                    ul.dropdown-menu.fadeInUp.animate__animated(aria-labelledby='navbarDropdown')
+                        li
+                            a.dropdown-item(href='catefory.html') Post list
+                        li
+                            a.dropdown-item(href='single.html') Post detail 
                 li.nav-item.dropdown
                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
                         | Shop
@@ -27,3 +33,16 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
                     i.bi-cart-fill.me-1
                     | Cart
                     span.badge.bg-dark.text-white.ms-1.rounded-pill 0
+            
+            .dropdown
+                a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                    | Shop
+                ul.dropdown-menu.fadeInUp.animate__animated(aria-labelledby='navbarDropdown')
+                    li
+                        a.dropdown-item(href='login.html') Login
+                    li
+                        a.dropdown-item(href='register.html') Register
+                    li
+                        a.dropdown-item(href='contact.html') Contact
+                    li
+                        a.dropdown-item(href='upload-file.html') Upload file
