@@ -9,14 +9,7 @@ block config
 block content 
 
   // Featured blog post
-  .card.mb-4
-    img.card-img-top(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg', alt='...')
-    .card-body
-      .small.text-muted January 1, 2021
-      h2.card-title Featured Post Title
-      p.card-text
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
-      a.btn.btn-primary.stretched-link(href='single.html') Read more →        
+  include includes/cards/card-overlay.pug
     
   .row
     - for (var x = 0; x < 6; x++)

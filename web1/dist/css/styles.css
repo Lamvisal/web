@@ -10900,3 +10900,18 @@ body {
   background: #fff;
   cursor: pointer;
 }
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lift {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition-delay: 0.2s;
+}
+.lift:hover {
+  transform: translateY(-0.3333333333rem);
+  box-shadow: 0 0.5rem 2rem 0 rgba(33, 40, 50, 0.25);
+}
