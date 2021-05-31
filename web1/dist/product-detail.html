@@ -7,6 +7,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
+        <!--Load Simple DataTables Stylesheet-->
+        <link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <link href="assets/aos/dist/aos.css" rel="stylesheet" />
@@ -17,7 +19,7 @@
     <body class="sb-nav-fixed">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
+            <div class="container">
                 <a class="navbar-brand" href="/">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,10 +35,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu fadeInUp animate__animated" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="product.html">Products list</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="product-detail.html">Product detail</a></li>
-                                <li><a class="dropdown-item" href="single.html">Post detail</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -69,49 +70,86 @@
             </div>
         </header>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-3">
-                    <!-- Search widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Product category</div>
-                        <div class="card-body">
-                            <div class="list-group list-group-flush">
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-                                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+            <main>
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6">
+                        <div class="swiper-container mySwiper2 mb-4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://dummyimage.com/1024x750/dee2e6/6c757d.jpg" data-lity><img src="https://dummyimage.com/750x450/dee2e6/6c757d.jpg" /></a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper-container mySwiper1" thumbsSlider="">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" /></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-9">
-                    <main>
-                        <div class="row gx-4 gx-lg-5 align-items-center">
-                            <div class="col-md-6">
-                                <a href="#" data-lity data-lity-target="https://dummyimage.com/600x700/dee2e6/6c757d.jpg"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="small mb-1">SKU: BST-498</div>
-                                <h1 class="display-5 fw-bolder">Shop item template</h1>
-                                <div class="fs-5 mb-5">
-                                    <span class="text-decoration-line-through">$45.00</span>
-                                    <span>$40.00</span>
-                                </div>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-                                <div class="d-flex">
-                                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                        <i class="bi-cart-fill me-1"></i>
-                                        Add to cart
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: BST-498</div>
+                        <h1 class="display-5 fw-bolder">Shop item template</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-decoration-line-through">$45.00</span>
+                            <span>$40.00</span>
                         </div>
-                    </main>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </main>
             <!-- Related items section-->
             <section class="py-5">
                 <h2 class="fw-bolder mb-4">Related products</h2>
@@ -252,6 +290,7 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="assets/aos/dist/aos.js"></script>

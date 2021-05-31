@@ -9,9 +9,9 @@ block config
 block content 
 
   // Featured blog post
-  include includes/cards/card-overlay.pug
+  include includes/posts/post-intro-section.pug
     
-  .row
+  .row.row-cols-1.row-cols-md-2.g-4
     - for (var x = 0; x < 6; x++)
-      .col-lg-6.mb-4
+      .col
         include includes/posts/post-item.pug       

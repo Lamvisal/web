@@ -1,3 +1,36 @@
-.card-img{
+.card-img,.card-img-top,.card-img-bottom{
     object-fit: cover;
+}
+.card-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    a{
+        text-decoration: none;
+    }
+}
+.card-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.card-horizontal{
+    .card-img,.card-img-top,.card-img-bottom{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+.card-larger{
+    .card-text{
+        -webkit-line-clamp: 3;
+    }
+}
+
+.aos-item{
+    height: 5em;
+    width: 5em;
+    background: $primary;
+    margin-bottom: 2rem;
 }

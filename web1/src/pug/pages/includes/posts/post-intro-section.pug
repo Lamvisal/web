@@ -1,0 +1,6 @@
+.row 
+  .col-lg-6.mb-4(data-aos="fade-left", data-aos-anchor-placement="top-center") 
+    include post-item-larger.pug
+  .col-lg-6(data-aos="fade-right") 
+    - for (var x = 0; x < 3; x++)
+      include ../cards/horizontal.pug

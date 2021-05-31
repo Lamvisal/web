@@ -17,7 +17,7 @@
     <body class="sb-nav-fixed">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
+            <div class="container">
                 <a class="navbar-brand" href="/">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,10 +33,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu fadeInUp animate__animated" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="product.html">Products list</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="product-detail.html">Product detail</a></li>
-                                <li><a class="dropdown-item" href="single.html">Post detail</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -113,21 +112,58 @@
                 <div class="col-lg-9">
                     <main>
                         <!-- Featured blog post-->
-                        <div class="card bg-dark text-white border-0 mb-4">
-                            <div class="ratio ratio-16x9"><img class="card-img" src="assets/img/news/img6.jpg" alt="img" /></div>
-                            <div class="card-img-overlay d-flex flex-column">
-                                <div class="mt-auto">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text">Last updated 3 mins ago</p>
-                                </div>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                                <!-- Blog post-->
+                                <article class="card card-larger">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
+                                    <div class="card-body">
+                                        <h5 class="fs-3 card-title"><a class="stretched-link" href="single.html">Card title Some quick example text to build on the card title and make up</a></h5>
+                                        <p class="card-text">Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-right">
+                                <article class="card mb-3 card-horizontal">
+                                    <div class="row g-0">
+                                        <div class="col-md-4"><img class="card-img h-100" src="assets/img/news/img4.jpg" alt="img" /></div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a class="stretched-link" href="single.html">This is a wider card with supporting supporting text below</a></h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card mb-3 card-horizontal">
+                                    <div class="row g-0">
+                                        <div class="col-md-4"><img class="card-img h-100" src="assets/img/news/img4.jpg" alt="img" /></div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a class="stretched-link" href="single.html">This is a wider card with supporting supporting text below</a></h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card mb-3 card-horizontal">
+                                    <div class="row g-0">
+                                        <div class="col-md-4"><img class="card-img h-100" src="assets/img/news/img4.jpg" alt="img" /></div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a class="stretched-link" href="single.html">This is a wider card with supporting supporting text below</a></h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 mb-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
@@ -135,10 +171,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-lg-6 mb-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
@@ -146,10 +182,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-lg-6 mb-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
@@ -157,10 +193,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-lg-6 mb-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
@@ -168,10 +204,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-lg-6 mb-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
@@ -179,10 +215,10 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-lg-6 mb-4">
+                            <div class="col">
                                 <!-- Blog post-->
-                                <article class="card">
-                                    <img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" />
+                                <article class="card lift">
+                                    <div class="ratio ratio-16x9"><img class="card-img-top" src="assets/img/news/img3.jpg" alt="img" /></div>
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>

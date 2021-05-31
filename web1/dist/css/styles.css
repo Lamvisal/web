@@ -10838,6 +10838,11 @@ body {
   height: 100%;
 }
 
+img, svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -10888,6 +10893,13 @@ body {
   overflow: hidden;
 }
 
+.swiper-container-thumbs .swiper-slide {
+  border: 1px solid;
+}
+.swiper-container-thumbs .swiper-slide-thumb-active {
+  border-color: #0d6efd;
+}
+
 .label-file {
   position: absolute;
   height: 100%;
@@ -10901,9 +10913,42 @@ body {
   cursor: pointer;
 }
 
-.card-img {
+.card-img, .card-img-top, .card-img-bottom {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.card-title a {
+  text-decoration: none;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.card-horizontal .card-img, .card-horizontal .card-img-top, .card-horizontal .card-img-bottom {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-larger .card-text {
+  -webkit-line-clamp: 3;
+}
+
+.aos-item {
+  height: 5em;
+  width: 5em;
+  background: #0d6efd;
+  margin-bottom: 2rem;
 }
 
 .lift {
