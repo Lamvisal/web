@@ -17,13 +17,10 @@ html(lang='en')
         include ../includes/navigation/topnav.pug
         include ../includes/header.pug
         .container.mt-5 
-            .row            
-                .col-lg-3
-                    include ../includes/navigation/sidenav-product.pug
-                .col-lg-9                    
-                    main
-                        block content  
-            
+                    
+            main
+                block content  
+            include ../includes/product/product-related.pug
             
 
         include ../includes/footer.pug

@@ -1,15 +1,24 @@
 .row.gx-4.gx-lg-5.align-items-center
 
   .col-md-6
-    a(href="#", data-lity, data-lity-target="https://dummyimage.com/600x700/dee2e6/6c757d.jpg")
-      img.card-img-top.mb-5.mb-md-0(src='https://dummyimage.com/600x700/dee2e6/6c757d.jpg', alt='...')
+    include thumbs-galery.pug
+    //- a(href="#", data-lity, data-lity-target="https://dummyimage.com/600x700/dee2e6/6c757d.jpg")
+    //-   img.card-img-top.mb-5.mb-md-0(src='https://dummyimage.com/600x700/dee2e6/6c757d.jpg', alt='...')
 
   .col-md-6
     .small.mb-1 SKU: BST-498
-    h1.display-5.fw-bolder Shop item template
-    .fs-5.mb-5
-      span.text-decoration-line-through $45.00
-      span $40.00
+    h1.display-5.fw-bolder Shop item template    
+    // Product reviews
+    .d-flex.small.text-warning.mb-3
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+      .bi-star-fill
+    .mb-3
+      span.fs-3.fw-bold $45.00
+      span.fs-6.text-decoration-line-through $40.00
+      span 16%
     p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?
     .d-flex
       input#inputQuantity.form-control.text-center.me-3(type='num', value='1', style='max-width: 3rem')

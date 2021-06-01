@@ -1,4 +1,4 @@
-extends ../layouts/right-content.pug
+extends ../layouts/products/left-content.pug
 
 block config
     - var bodyClass = 'sb-nav-fixed'
@@ -13,7 +13,7 @@ block config
 block content
     //- include includes/breadcrumb.pug       
     .row.gx-2.gx-lg-3.row-cols-2.row-cols-md-3.justify-content-center
-        -for(var x=0;x<4;x++)
+        -for(var x=0;x<6;x++)
             .col-lg-4.mb-3
                 include includes/products/product-item.pug     
     

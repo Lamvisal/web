@@ -1,6 +1,6 @@
 // Navigation
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    .container.px-4.px-lg-5
+    .container
         a.navbar-brand(href='/') Start Bootstrap
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
@@ -21,13 +21,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
                         | Shop
                     ul.dropdown-menu.fadeInUp.animate__animated(aria-labelledby='navbarDropdown')
                         li
-                            a.dropdown-item(href='product.html') All Products
+                            a.dropdown-item(href='product.html') Products list
                         li
                             hr.dropdown-divider
                         li
-                            a.dropdown-item(href='product-detail.html') Product detail 
-                        li
-                            a.dropdown-item(href='single.html') Post detail
+                            a.dropdown-item(href='product-detail.html') Product detail                       
             form.d-flex
                 button.btn.btn-outline-dark(type='submit')
                     i.bi-cart-fill.me-1
