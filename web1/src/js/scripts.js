@@ -149,7 +149,7 @@ let app = {
 			let modalId = '#' + $(className).attr('id');
 			$.fancybox.open({
 				src: modalId,
-				type: 'inline',
+				type: 'inline',  
 				opts: {
 					afterShow: function (instance, current) {
 						setTimeout(function () {
@@ -180,6 +180,7 @@ let app = {
 				$('.jsContactBtnBox').removeClass('click');
 			}
 		});
+
 
 		$('.jsContactBtn').on('click', function (e) {
 			$(this).toggleClass('click');

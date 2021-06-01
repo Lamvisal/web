@@ -10901,7 +10901,7 @@ body {
   cursor: pointer;
 }
 
-.card-img {
+.card-img, .card-img-top, .card-img-bottom {
   -o-object-fit: cover;
      object-fit: cover;
 }
